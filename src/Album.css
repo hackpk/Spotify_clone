@@ -1,0 +1,56 @@
+/** @format */
+.album {
+	width: 200px;
+	height: calc(62vh - 100px);
+	margin-top: 20px;
+	margin-bottom: 30px;
+	background-color: rgb(32, 31, 31);
+	border-radius: 8px;
+	margin-right: 30px;
+}
+
+.album_stuff {
+	display: inline-flex;
+	position: relative;
+}
+.album_stuff > .album_play {
+	display: none;
+	position: absolute;
+	left: 160px;
+	top: 140px;
+	color: #1ed15e;
+}
+.album:hover {
+	background-color: rgb(41, 40, 40);
+}
+
+.album:hover > .album_stuff > .album_play {
+	display: block;
+}
+.album_stuff > img {
+	padding: 15px 15px;
+	padding-bottom: 0;
+	width: 170px;
+	height: 150px;
+}
+
+.album_info {
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+
+.album_info > h2 {
+	margin-bottom: 10x;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.album_info > p {
+	margin-top: 8px;
+	font-size: 14px;
+	font-weight: 500;
+	color: grey;
+}
